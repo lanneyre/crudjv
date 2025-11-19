@@ -49,6 +49,7 @@ require("include/config.php");
 					<td><?php echo $jeuxvideo['Jeux_PaysOrigine']; ?></td>
 					<td><?php echo $jeuxvideo['Jeux_Mode']; ?></td>
 					<td><a href="edit.php?Jeux_Id=<?php echo $jeuxvideo['Jeux_Id']; ?>">edit</a></td>
+					<td><a href="delete.php?Jeux_Id=<?php echo $jeuxvideo['Jeux_Id']; ?>">delete</a></td>
 				</tr>
 			<?php }
 			?>

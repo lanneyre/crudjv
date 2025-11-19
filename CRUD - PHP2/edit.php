@@ -61,7 +61,7 @@ $jeuEdite = $testJeuxQuery->fetch();
 
         <label for="Genre_Id">Genre</label>
         <select name="Genre_Id" id="Genre_Id" required>
-            <option disabled selected value="<?php echo $jeuEdite['Genre_Id']; ?>"> <?php echo($jeuEdite['Genre_Titre']); ?></option>
+            <option selected value="<?php echo $jeuEdite['Genre_Id']; ?>"> <?php echo($jeuEdite['Genre_Titre']); ?></option>
             <?php
             while ($genre = $genreQuery->fetch()) {
             ?><option value="<?php echo $genre['Genre_Id']; ?>"><?php echo $genre['Genre_Titre']; ?></option> <?php
